@@ -1,0 +1,159 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: var(--wheat);
+    color: var(--dark-grey);
+  }
+  
+  :root {
+    --wheat: wheat;
+    --dark-grey: #403636;
+    --navy: rgb(48, 48, 139);
+  }
+  
+  @font-face {
+      font-family: headTurner;
+      src: url("./fonts/Head-Turner.woff") format("woff"); 
+  }
+  
+  .topnav {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    border-style: none;
+    font-family: 'Bebas Neue', cursive;
+    padding: 30px 0px 20px 30px;
+  }
+  
+  #name { 
+    font-family: "headTurner", sans-serif;
+    font-size: 75px;
+    float: left;
+    padding: 3% 0px 0px;
+    color: var(--dark-grey);
+  }
+
+  span.haley {
+    /*position: absolute;
+    top: 10%;
+    left: -10px;
+    background: none;
+    transform: rotate(270deg);
+    z-index: 2; */
+    font-size: 60px;
+    color: var(--dark-grey);
+  }
+  
+.navigation-section {
+    display: flex;
+    padding: 10px 10px 10px 50px;
+}
+
+  .topnav a {
+      float: right;
+      color: var(--dark-grey);
+      text-align: center;
+      padding: 10px 15px;
+      text-decoration: none;
+      font-size: 30px;
+  }
+  
+  .container-image {
+      height: 200px;
+      width: -webkit-fill-available;
+      position: relative;
+  }
+
+  #hero-container-text {
+    background: rgba(76, 175, 80, 0.0);
+    position: relative;
+    top: -60px;
+    font-size: 40px;
+    color: navajowhite;
+    font-family: "headTurner", sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 15px;
+  }
+
+  #about-me-title {
+    font-family: 'Bebas Neue', cursive;
+    padding: 20px;
+    transform: rotate(270deg);
+    position: absolute;
+     margin-left: -110px;
+    top: 50%;
+     margin-top: -50px;
+
+  }
+
+  .about-me {
+    --gap: 16px;
+    position: relative;
+    box-sizing: border-box;
+    padding: var(--gap);
+    margin: 5% 10%;
+}
+
+#work-title {
+    font-family: 'Bebas Neue', cursive;
+    padding: 20px;
+    transform: rotate(270deg);
+    position: absolute;
+     margin-left: -80px;
+    top: 50%;
+     margin-top: -50px;
+}
+
+.work-grid {
+    --gap: 16px;
+    --num-cols:3;
+    --row-height: 300px;
+    position: relative;
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+    margin: 5% 10%;
+}
+
+.work-grid > img {
+    width: 100%;
+    height: 100%;
+    /*maintains aspect ratio */
+    object-fit: cover;
+}
+
+.work-grid-col-2 {
+    grid-column: span 3;
+}
+
+.work-grid-row-2 {
+    row-column: span 2;
+}
+
+  @media screen and (max-width: 798px) {
+    span.haley {
+      position: inherit;
+    }
+  }
+
+
+  @media screen and (max-width: 1024ox) {
+      .work-grid {
+         --num-cols: 2;
+         --row-height: 200px; 
+      }
+  }
+
+  /*Should correspond with Google Fonts*/
+  /*font-family: 'Bebas Neue', cursive;
+  font-family: 'Righteous', cursive;
+  font-family: 'Roboto', sans-serif;
+  */
+  
+  
