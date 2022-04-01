@@ -89,6 +89,7 @@
 
 .about-me p {
   flex-basis: 70%;
+  font-family: 'Bebas Neue', sans-serif;
 }
 
 #work-title {
@@ -180,4 +181,48 @@
      --num-cols: 2;
      --row-height: 200px; 
   }
+  .about-me {
+    --gap: 16px;
+    position: relative;
+    box-sizing: border-box;
+    padding: var(--gap);
+    display: block;
+    flex-basis: 30%;
+}  
+
+  #body-title {
+  font-family: 'Bebas Neue', cursive;
+  padding: 20px;
+  font-size: xx-large;
+  border-bottom: 2px solid var(--dark-grey);
+  border-right: 0px;
+  text-align: center;
+}
+
+  #work-title {
+    font-family: 'Bebas Neue', cursive;
+    padding: 20px;
+    font-size: xx-large;
+    border-bottom: 2px solid var(--dark-grey);
+    border-right: 0px;
+    text-align: center;
+}
+
+  .contact-info {
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    flex-direction: column;
+}
+
+  #contact-title {
+      font-size: xx-large;
+      border-bottom: 2px solid var(--dark-grey);
+      border-right: 0px;
+    }
+
+
+    .about-me p {
+      padding-top: 2%;
+    }
 }
