@@ -2,7 +2,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    background-color: var(--wheat);
+    background-color: var(--whiteish);
     color: var(--dark-grey);
   }
   
@@ -10,86 +10,71 @@
     --wheat: wheat;
     --dark-grey: #403636;
     --navy: rgb(48, 48, 139);
-  }
-  
-  @font-face {
-      font-family: headTurner;
-      src: url("./fonts/Head-Turner.woff") format("woff"); 
-  }
-  
-  .topnav {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    border-style: none;
-    font-family: 'Bebas Neue', cursive;
-    padding: 30px 0px 20px 30px;
-  } 
-  
-  #name { 
-    font-family: "headTurner", sans-serif;
-    font-size: 75px;
-    float: left;
-    padding: 3% 0px 0px;
-    color: var(--dark-grey);
-  }
+    --none: rgba(76, 175, 80, 0.0);
+    --whiteish: rgb(231, 221, 206);
 
-  span.haley {
-    /*position: absolute;
-    top: 10%;
-    left: -10px;
-    background: none;
-    transform: rotate(270deg);
-    z-index: 2; */
-    font-size: 60px;
-    color: var(--dark-grey);
   }
   
-.navigation-section {
-    display: flex;
-    padding: 10px 10px 10px 50px;
+@font-face {
+    font-family: 'headTurner';
+    src: url('../assets/fonts/Head-Turner.woff') format('woff');
+    font-weight: normal;
 }
 
-  .topnav a {
-      float: right;
-      color: var(--dark-grey);
-      text-align: center;
-      padding: 10px 15px;
-      text-decoration: none;
-      font-size: 30px;
-  }
+.header-title {
+    font-family: "headTurner", sans-serif;
+    font-size: 35px;
+    float: left;
+    padding: 1% 1% 1% 5%;
+    margin: 1% 0px;
+    color: var(--whiteish);
+    background-color: var(--dark-grey);
+}
+
+.topnav {
+    margin: 1% 0px 1px;
+    padding: 1% 0px;
+    float: right;
+    font-family: 'Bebas Neue', cursive;
   
-  .container-image {
-      height: 200px;
+}
+
+.topnav a {
+      margin: 75px;
+      font-size: 16px;
+      font-family: 'Bebas Neue', cursive;
+      text-decoration: underline;    
+  }
+
+.container-image {
+      height: 150px;
       width: -webkit-fill-available;
       position: relative;
-
   }
 
   #hero-container-text {
-    background: rgba(76, 175, 80, 0.0);
+    background: var(--none);
     position: relative;
     top: -60px;
-    font-size: 40px;
-    color: navajowhite;
+    font-size: 30px;
+    color: var(--dark-grey);
     font-family: "headTurner", sans-serif;
     display: flex;
     justify-content: flex-end;
-    padding: 0px 15px;
+    padding: 0px 5%;
   }
 
-  #about-me-title {
-    font-family: 'Bebas Neue', cursive;
-    padding: 20px;
-    transform: rotate(270deg);
-    position: absolute;
-     margin-left: -110px;
-    top: 50%;
-     margin-top: -50px;
-     margin-right: 10px;
-     border-bottom: 1px solid black;
 
-
+#body-title  {
+  font-family: 'Bebas Neue', cursive;
+  padding: 20px;
+  font-size: larger;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  border-right: 2px solid var(--dark-grey);
+  /*width: 20%;*/
+  flex-basis: 20%;
   }
 
   .about-me {
@@ -97,7 +82,13 @@
     position: relative;
     box-sizing: border-box;
     padding: var(--gap);
-    margin: 5% 10%;
+    /* margin: 5% 10%; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-me p {
+  flex-basis: 70%;
 }
 
 #work-title {
@@ -130,7 +121,6 @@
 .work-grid > img {
     width: 100%;
     height: 100%;
-    /*maintains aspect ratio */
     object-fit: cover;
 }
 
@@ -139,56 +129,59 @@
 }
 
 .work-grid-row-2 {
-    row-column: span 2;
+    column-gap: span 2;
 }
-#contact-me-title {
+
+#contact-title {
     font-family: 'Bebas Neue', cursive;
     padding: 20px;
-    transform: rotate(270deg);
-    position: absolute;
     font-size: larger;
     margin-right: 10px;
-    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    border-right: 2px solid var(--dark-grey);
+    width: 20%;
   }
   
 .contact-section {
-    display: flex;
-    margin: 10px 10px 10px 50px;
-    align-items: baseline;
-    justify-content: space-around;
-    border-style: none;
-    font-family: 'Bebas Neue', cursive;
-    padding: 20px 0px 30px 0px;
-    background-color: rgba(1, 1, 1, 0);
+  position: relative;
+  display: flex;
+  align-items: baseline;
 }
 
-  .contact-section a {
-      float: right;
-      color: var(--dark-grey);
-      text-align: center;
-      padding: 10px 15px;
-      text-decoration: none;
-      font-size: 20px;
+  .contact-section span {
+      margin: 75px;
+    
   }
 
-  @media screen and (max-width: 798px) {
-    span.haley {
-      position: inherit;
-    }
+  .contact-info {
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    display: flex;
+    align-items: baseline;
+
   }
 
 
-  @media screen and (max-width: 1024ox) {
+
+  @media screen and (max-width: 1024px) {
       .work-grid {
          --num-cols: 2;
          --row-height: 200px; 
       }
   }
 
-  /*Should correspond with Google Fonts*/
-  /*font-family: 'Bebas Neue', cursive;
-  font-family: 'Righteous', cursive;
-  font-family: 'Roboto', sans-serif;
-  */
-  
-  
+  @media screen and (max-width: 768px) {
+    .work-grid {
+       --num-cols: 2;
+       --row-height: 200px; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+  .work-grid {
+     --num-cols: 2;
+     --row-height: 200px; 
+  }
+}
