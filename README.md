@@ -1,5 +1,6 @@
 # Haley-Zito-Portfolio
 Portfolio Project - Homework #2 for UCSD bootcamp
+Bootcamp Live Site: https://haleyhilton.github.io/Haley-Zito-Portfolio/
 
 This project acts as an interim version of my portfolio which I hope to both 
 A. add to with later work
