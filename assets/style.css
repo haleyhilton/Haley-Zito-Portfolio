@@ -67,14 +67,12 @@
 
 #body-title {
   font-family: 'Bebas Neue', cursive;
-  padding: 20px;
+  padding: 5% 3.5%;
   font-size: larger;
   margin-right: 10px;
-  display: flex;
-  justify-content: center;
-  border-right: 2px solid var(--dark-grey);
-  /*width: 20%;*/
-  flex-basis: 20%;
+  margin-left: 5%;
+  border: 2px solid;
+  border-radius: 50%;
 }
 
 .about-me {
@@ -85,6 +83,7 @@
   /* margin: 5% 10%; */
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 
@@ -93,16 +92,17 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   padding-right: 5%;
+  padding-left: 3%;
+
 }
 
 #work-title {
   font-family: 'Bebas Neue', cursive;
-  padding: 30% 20px 20px 20px;
-  border-right: 2px solid var(--dark-grey);
-  position: relative;
-  align-items: center;
-  text-align: center;
-  flex-basis: 30%;
+  padding: 5% 4.5%;
+  font-size: larger;
+  margin-left: 5%;
+  border: 2px solid;
+  border-radius: 50%;
 }
 
 .work-grid-container {
@@ -163,19 +163,17 @@
 
 #contact-title {
   font-family: 'Bebas Neue', cursive;
-  padding: 20px;
+  padding: 5% 3%;
   font-size: larger;
-  margin-right: 10px;
-  display: flex;
-  justify-content: center;
-  border-right: 2px solid var(--dark-grey);
-  flex-basis: 21.5%;
+  margin-left: 7%;
+  border: 2px solid;
+  border-radius: 50%;
 }
 
 .contact-section {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .contact-section span {
@@ -185,11 +183,12 @@
 
 .contact-info {
   margin-bottom: 40px;
+  margin-left: 4.5%;
   text-align: center;
   font-family: 'Bebas Neue', cursive;
   display: flex;
-  align-items: center;
-
+  gap: 20px;
+  align-content: center;
 }
 
 
