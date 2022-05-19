@@ -13,23 +13,27 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Righteous&family=Roboto:ital,wght@0,100;0,400;0,500;0,900;1,700&display=swap"
         rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
 </head>
 
 
-<header class="header">
-    <div class="header-title">Haley Hilton Zito</div>
-    <nav class="topnav">
-        <a href="#body-title">About Me</a>
-        <a href="#work-title">Work</a>
-        <a href="#contact-title">Contact Me</a>
-    </nav>
+<header id="header-color">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Haley Hilton Zito</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#body-title">About Me<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#work-title">Work</a>
+            <a class="nav-item nav-link" href="#contact-title">Contact Me</a>
+            <i class="fa-brands fa-linkedin"></i>          
+        </div>
+      </nav>
 </header>
-
-<div class="hero-container">
-    <img src="./assets/images/wavey.png" alt="wavey design" class="container-image">
-    <div id="hero-container-text">
-    </div>
-</div>
 
 <body>
     <main>
@@ -69,7 +73,8 @@
             <span class="phone-number"><em>858.945.4569</em></span>
             <span class="email"><em><a href=" mailto: haleymariehilton@gmail.com">Email</a></em></span>
             <span class="github"><em><a href="https://github.com/haleyhilton">GitHub</a></em></span>
-            <img src="./assets/images/oaxaca.jpg" alt="photo of Haley Zito" id="contact-image">
+            <span class="linkedin"><em><a href="https://www.linkedin.com/in/haleyhilton/">LinkedIn</a></em></span>
+            <span class="resume"><em><a href="./assets/images/pdf/Haley Zito Resume.pdf">Resume</a></em></span>
         </section>
     </footer>
 
