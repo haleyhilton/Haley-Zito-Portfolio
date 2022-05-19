@@ -2,9 +2,9 @@
 Portfolio Project - Homework #2 for UCSD bootcamp
 Bootcamp Live Site: https://haleyhilton.github.io/Haley-Zito-Portfolio/
 
-This project acts as an interim version of my portfolio which I hope to both 
-A. add to with later work
-B. clean-up to be more representative of my skill-set as I learn and truer to my eye for design
+This project acts as an *updated* interim version of my portfolio which I will
+A. continue to add to with more work
+B. clean-up to be more representative of my skill-set as I learn and truer to my eye for design (planning to use React to do so in the future)
 
 Namely, this application hosts a grid section to make a responsive area to host my work that links out to other deployed applications. The portfolio also uses strong media queries to insure functionality across multiple devices, although, my main focus was how it would show up on large desktops and phones. 
 
